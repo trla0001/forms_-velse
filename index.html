@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms login øvelse</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: system-ui;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: 5% 35% 0 35%;
+        }
+
+        label {
+            padding-top: 3%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="action_page.php" netlify>
+
+        <div class="container">
+            <label for="uname"><b>E-mailadresse eller brugernavn</b></label>
+            <input type="text" placeholder="Brugernavn" name="uname" required>
+
+            <label for="psw"><b>Adgangskode</b></label>
+            <input type="password" placeholder="Adgangskode" name="psw" required>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Husk login
+            </label>
+            <button type="submit">Login</button>
+
+        </div>
+    </form>
+
+</body>
+
+</html>
